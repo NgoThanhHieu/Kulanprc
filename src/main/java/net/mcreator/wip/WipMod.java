@@ -26,6 +26,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.wip.init.WipModTabs;
 import net.mcreator.wip.init.WipModItems;
 
 import java.util.function.Supplier;
@@ -42,7 +43,7 @@ public class WipMod {
 	private static int messageID = 0;
 
 	public WipMod() {
-
+		WipModTabs.load();
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		WipModItems.REGISTRY.register(bus);

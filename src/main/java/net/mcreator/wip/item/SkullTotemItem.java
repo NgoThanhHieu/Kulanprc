@@ -18,7 +18,7 @@ import java.util.List;
 
 public class SkullTotemItem extends Item {
 	public SkullTotemItem() {
-		super(new Item.Properties().tab(WipModTabs.TAB_KULANMOBS).stacksTo(64).rarity(Rarity.UNCOMMON));
+		super(new Item.Properties().tab(WipModTabs.TAB_WIP).stacksTo(1).rarity(Rarity.UNCOMMON));
 	}
 
 	@Override

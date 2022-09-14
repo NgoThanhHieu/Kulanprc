@@ -27,12 +27,21 @@
           }
         ]
       }
+    },
+    {
+      "name": "WIP",
+      "type": "tab",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wip"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "itemGroup.tabwip": "wip",
       "item.wip.skull_totem": "Skull Totem"
     }
   },
