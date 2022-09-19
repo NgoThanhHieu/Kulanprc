@@ -35,6 +35,34 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "wip"
+    },
+    {
+      "name": "Tornado",
+      "type": "item",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tornado"
+    },
+    {
+      "name": "TornadoInHand",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tornado_in_hand",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -42,6 +70,7 @@
   "language_map": {
     "en_us": {
       "itemGroup.tabwip": "wip",
+      "item.wip.tornado": "Tornado",
       "item.wip.skull_totem": "Skull Totem"
     }
   },
