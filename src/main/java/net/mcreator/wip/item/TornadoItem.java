@@ -21,6 +21,6 @@ public class TornadoItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("When in hand throws you in air"));
+		list.add(new TextComponent("When right-clicket it throws you in air"));
 	}
 }

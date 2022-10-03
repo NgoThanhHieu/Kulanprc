@@ -25,7 +25,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "When in hand throws you in air"
+      "When right-clicket it throws you in air"
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
