@@ -36,12 +36,14 @@ public class TornadoInHandProcedure {
 			return;
 		if (!(entity instanceof LivingEntity _livEnt ? _livEnt.isFallFlying() : false)
 				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == WipModItems.TORNADO.get()) {
-			entity.setDeltaMovement(new Vec3((entity.getLookAngle().x), 1, (Mth.nextDouble(new Random(), -0.5, 0.5))));
+			entity.setDeltaMovement(new Vec3((Mth.nextDouble(new Random(), -0.5, -0.5)), 1, (Mth.nextDouble(new Random(), -0.5, -0.5))));
 			if (entity instanceof Player _player)
 				_player.getCooldowns().addCooldown(WipModItems.TORNADO.get(), 75);
 		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.isFallFlying() : false)
 				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == WipModItems.TORNADO.get()) {
-			entity.setDeltaMovement(new Vec3(1, (entity.getDeltaMovement().y()), (entity.getLookAngle().z)));
+			entity.setDeltaMovement(new Vec3(1, 1, (Mth.nextDouble(new Random(), -0.5, -0.5))));
+			if (entity instanceof Player _player)
+				_player.getCooldowns().addCooldown(WipModItems.TORNADO.get(), 75);
 		}
 	}
 }

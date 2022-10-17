@@ -1,0 +1,36 @@
+{
+  "_fv": 33,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "puprsword",
+    "customModelName": "Normal",
+    "name": "Mystic Sword",
+    "specialInfo": [
+      "Summons lightning when criting"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:WIP"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 0,
+    "efficiency": 0.0,
+    "attackSpeed": 1.2000000000000002,
+    "enchantability": 24,
+    "damageVsEntity": 6.0,
+    "usageCount": 500,
+    "blocksAffected": [],
+    "hasGlow": true,
+    "repairItems": [
+      {
+        "value": "Items.AMETHYST_SHARD"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "MysticSwordCrit"
+    }
+  }
+}

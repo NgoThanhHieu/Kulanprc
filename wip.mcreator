@@ -12,7 +12,7 @@
       "name": "SkullTotemUsed",
       "type": "procedure",
       "sortid": 23,
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "registry_name": "skull_totem_used",
       "metadata": {
@@ -59,15 +59,97 @@
           }
         ]
       }
+    },
+    {
+      "name": "Baboon",
+      "type": "livingentity",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baboon"
+    },
+    {
+      "name": "MysticSword",
+      "type": "tool",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystic_sword"
+    },
+    {
+      "name": "MysticSwordCrit",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystic_sword_crit",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MysticSwordCrafting",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystic_sword_crafting"
+    },
+    {
+      "name": "NetherTower",
+      "type": "structure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_tower"
+    },
+    {
+      "name": "NetherCrystalLoot",
+      "type": "loottable",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_crystal_loot"
     }
   ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "idlebaboon",
+      "files": [
+        "idlebaboon"
+      ],
+      "category": "neutral",
+      "subtitle": "Baboon idle"
+    },
+    {
+      "name": "deadbaboon",
+      "files": [
+        "angrybaboon"
+      ],
+      "category": "neutral",
+      "subtitle": "Baboon dies"
+    }
+  ],
   "language_map": {
     "en_us": {
       "itemGroup.tabwip": "wip",
+      "item.wip.mystic_sword": "Mystic Sword",
+      "item.wip.baboon_spawn_egg": "Baboon Spawn Egg",
       "item.wip.tornado": "Tornado",
-      "item.wip.skull_totem": "Skull Totem"
+      "subtitles.idlebaboon": "Baboon idle",
+      "item.wip.skull_totem": "Skull Totem",
+      "entity.wip.baboon": "Baboon",
+      "subtitles.deadbaboon": "Baboon dies"
     }
   },
   "foldersRoot": {

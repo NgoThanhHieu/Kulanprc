@@ -1,0 +1,7 @@
+{
+  "_fv": 33,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"controls_if\" x=\"562\" y=\"5\"><value name=\"IF0\"><block type=\"logic_binary_ops\"><field name=\"OP\">EQ</field><value name=\"A\"><block type=\"custom_dependency_logic\"><field name=\"NAME\">isVanillaCritical</field></block></value><value name=\"B\"><block type=\"logic_boolean\"><field name=\"BOOL\">TRUE</field></block></value></block></value><statement name=\"DO0\"><block type=\"item_cooldown_for\"><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:MysticSword</field></block></value><value name=\"ticks\"><block type=\"math_number\"><field name=\"NUM\">100</field></block></value><value name=\"entity\"><block type=\"source_entity_from_deps\"></block></value></block></statement></block><block type=\"event_trigger\" deletable=\"false\" x=\"57\" y=\"77\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"strike_lightning\"><field name=\"effectOnly\">FALSE</field><value name=\"x\"><block type=\"entity_pos_x\"><value name=\"entity\"><block type=\"entity_from_deps\"></block></value></block></value><value name=\"y\"><block type=\"entity_pos_y\"><value name=\"entity\"><block type=\"entity_from_deps\"></block></value></block></value><value name=\"z\"><block type=\"entity_pos_z\"><value name=\"entity\"><block type=\"entity_from_deps\"></block></value></block></value></block></next></block></xml>"
+  }
+}

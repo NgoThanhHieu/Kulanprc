@@ -15,7 +15,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.AbstractGui;
+
 import net.mcreator.wip.init.WipModItems;
 
 import javax.annotation.Nullable;
@@ -42,8 +42,6 @@ public class SkullTotemUsedProcedure {
 			}
 			if (entity instanceof LivingEntity _entity)
 				_entity.setHealth(20);
-				if (event.isCancelable() && event.getType() == RenderGameOverlayEvent.ElementType.HEALTH)
-					event.setCanceled(true);
 			if (true)
 				Minecraft.getInstance().gameRenderer.displayItemActivation(new ItemStack(WipModItems.SKULL_TOTEM.get()));
 			if (entity instanceof Player _player) {
@@ -51,7 +49,6 @@ public class SkullTotemUsedProcedure {
 				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 						_player.inventoryMenu.getCraftSlots());
 			}
-
 			if (entity instanceof Player _player && !_player.level.isClientSide())
 				_player.displayClientMessage(new TextComponent("U ded but now no"), (false));
 			new Object() {
