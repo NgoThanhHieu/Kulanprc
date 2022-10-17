@@ -1,0 +1,22 @@
+{
+  "idlebaboon": {
+    "category": "neutral",
+    "subtitle": "subtitles.idlebaboon",
+    "sounds": [
+      {
+        "name": "wip:idlebaboon",
+        "stream": false
+      }
+    ]
+  },
+  "deadbaboon": {
+    "category": "neutral",
+    "subtitle": "subtitles.deadbaboon",
+    "sounds": [
+      {
+        "name": "wip:angrybaboon",
+        "stream": false
+      }
+    ]
+  }
+}

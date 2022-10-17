@@ -22,8 +22,8 @@ public class WipModTabs {
 
 			@OnlyIn(Dist.CLIENT)
 			public boolean hasSearchBar() {
-				return true;
+				return false;
 			}
-		}.setBackgroundSuffix("item_search.png");
+		};
 	}
 }

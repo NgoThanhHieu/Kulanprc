@@ -28,6 +28,8 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.wip.init.WipModTabs;
 import net.mcreator.wip.init.WipModItems;
+import net.mcreator.wip.init.WipModFeatures;
+import net.mcreator.wip.init.WipModEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -47,6 +49,9 @@ public class WipMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		WipModItems.REGISTRY.register(bus);
+		WipModEntities.REGISTRY.register(bus);
+
+		WipModFeatures.REGISTRY.register(bus);
 
 	}
 

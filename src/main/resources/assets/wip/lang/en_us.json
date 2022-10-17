@@ -1,5 +1,7 @@
 {
   "itemGroup.tabwip": "wip",
   "item.wip.tornado": "Tornado",
-  "item.wip.skull_totem": "Skull Totem"
+  "subtitles.idlebaboon": "Baboon idle",
+  "item.wip.skull_totem": "Skull Totem",
+  "subtitles.deadbaboon": "Baboon dies"
 }
