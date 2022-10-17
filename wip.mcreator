@@ -12,8 +12,8 @@
       "name": "SkullTotemUsed",
       "type": "procedure",
       "sortid": 23,
-      "compiles": false,
-      "locked_code": true,
+      "compiles": true,
+      "locked_code": false,
       "registry_name": "skull_totem_used",
       "metadata": {
         "dependencies": [
