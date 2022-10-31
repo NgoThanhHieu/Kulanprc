@@ -1,22 +1,6 @@
 package net.mcreator.wip.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.living.LivingDeathEvent;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.common.MinecraftForge;
-
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.network.chat.TextComponent;
-import net.minecraft.client.Minecraft;
-
-import net.mcreator.wip.init.WipModItems;
 
 import javax.annotation.Nullable;
 
@@ -42,7 +26,7 @@ public class SkullTotemUsedProcedure {
 			}
 			if (entity instanceof LivingEntity _entity)
 				_entity.setHealth(20);
-			if (true)
+			if (world.isClientSide())
 				Minecraft.getInstance().gameRenderer.displayItemActivation(new ItemStack(WipModItems.SKULL_TOTEM.get()));
 			if (entity instanceof Player _player) {
 				ItemStack _stktoremove = new ItemStack(WipModItems.SKULL_TOTEM.get());
@@ -214,7 +198,7 @@ public class SkullTotemUsedProcedure {
 			}
 			if (entity instanceof LivingEntity _entity)
 				_entity.setHealth(20);
-			if (true)
+			if (world.isClientSide())
 				Minecraft.getInstance().gameRenderer.displayItemActivation(new ItemStack(WipModItems.SKULL_TOTEM.get()));
 			if (entity instanceof Player _player) {
 				ItemStack _stktoremove = new ItemStack(WipModItems.SKULL_TOTEM.get());

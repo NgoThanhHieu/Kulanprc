@@ -1,12 +1,8 @@
 package net.mcreator.wip.procedures;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.LightningBolt;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.core.BlockPos;
+import net.minecraftforge.eventbus.api.Event;
+
+import javax.annotation.Nullable;
 
 public class MysticSwordCritProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
