@@ -15,6 +15,6 @@ public class BaboonRenderer extends MobRenderer<BaboonEntity, ModelBaboon<Baboon
 
 	@Override
 	public ResourceLocation getTextureLocation(BaboonEntity entity) {
-		return new ResourceLocation("wip:textures/entities/baboon3.0.png");
+		return new ResourceLocation("wip:textures/entities/baboon4.0.png");
 	}
 }

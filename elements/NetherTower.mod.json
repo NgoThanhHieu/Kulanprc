@@ -8,8 +8,8 @@
     "spawnProbability": 1000000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
-    "spawnLocation": "Air",
-    "spawnHeightOffset": 30,
+    "spawnLocation": "Underground",
+    "spawnHeightOffset": 70,
     "spawnXOffset": 0,
     "spawnZOffset": 0,
     "spawnWorldTypes": [

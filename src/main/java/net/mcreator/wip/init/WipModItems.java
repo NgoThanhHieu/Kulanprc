@@ -13,6 +13,7 @@ import net.minecraft.world.item.Item;
 
 import net.mcreator.wip.item.TornadoItem;
 import net.mcreator.wip.item.SkullTotemItem;
+import net.mcreator.wip.item.PurpyJamItem;
 import net.mcreator.wip.item.MysticSwordItem;
 import net.mcreator.wip.WipMod;
 
@@ -23,4 +24,5 @@ public class WipModItems {
 	public static final RegistryObject<Item> BABOON = REGISTRY.register("baboon_spawn_egg",
 			() -> new ForgeSpawnEggItem(WipModEntities.BABOON, -7052516, -2090918, new Item.Properties().tab(WipModTabs.TAB_WIP)));
 	public static final RegistryObject<Item> MYSTIC_SWORD = REGISTRY.register("mystic_sword", () -> new MysticSwordItem());
+	public static final RegistryObject<Item> PURPY_JAM = REGISTRY.register("purpy_jam", () -> new PurpyJamItem());
 }

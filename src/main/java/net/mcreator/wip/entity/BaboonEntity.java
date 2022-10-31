@@ -43,7 +43,7 @@ public class BaboonEntity extends PathfinderMob {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
 		if (SPAWN_BIOMES.contains(event.getName()))
-			event.getSpawns().getSpawner(MobCategory.CREATURE).add(new MobSpawnSettings.SpawnerData(WipModEntities.BABOON.get(), 8, 4, 4));
+			event.getSpawns().getSpawner(MobCategory.CREATURE).add(new MobSpawnSettings.SpawnerData(WipModEntities.BABOON.get(), 8, 2, 4));
 	}
 
 	public BaboonEntity(PlayMessages.SpawnEntity packet, Level world) {

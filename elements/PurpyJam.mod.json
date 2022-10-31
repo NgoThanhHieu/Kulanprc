@@ -1,0 +1,17 @@
+{
+  "_fv": 33,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "muzikdisk",
+    "name": "Purpy Jam",
+    "description": "Jammin",
+    "creativeTab": {
+      "value": "CUSTOM:WIP"
+    },
+    "music": {
+      "value": "CUSTOM:purpy_jam"
+    },
+    "specialInfo": [],
+    "hasGlow": true
+  }
+}

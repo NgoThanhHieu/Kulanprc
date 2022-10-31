@@ -18,8 +18,9 @@ import java.util.HashMap;
 public class WipModSounds {
 	public static Map<ResourceLocation, SoundEvent> REGISTRY = new HashMap<>();
 	static {
-		REGISTRY.put(new ResourceLocation("wip", "idlebaboon"), new SoundEvent(new ResourceLocation("wip", "idlebaboon")));
 		REGISTRY.put(new ResourceLocation("wip", "deadbaboon"), new SoundEvent(new ResourceLocation("wip", "deadbaboon")));
+		REGISTRY.put(new ResourceLocation("wip", "purpy_jam"), new SoundEvent(new ResourceLocation("wip", "purpy_jam")));
+		REGISTRY.put(new ResourceLocation("wip", "idlebaboon"), new SoundEvent(new ResourceLocation("wip", "idlebaboon")));
 	}
 
 	@SubscribeEvent

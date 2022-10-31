@@ -119,18 +119,46 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "nether_crystal_loot"
+    },
+    {
+      "name": "PurpyJam",
+      "type": "musicdisc",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purpy_jam"
+    },
+    {
+      "name": "NetherTowerOnStructureInstanceGenerated",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_tower_on_structure_instance_generated",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [
-    {
-      "name": "idlebaboon",
-      "files": [
-        "idlebaboon"
-      ],
-      "category": "neutral",
-      "subtitle": "Baboon idle"
-    },
     {
       "name": "deadbaboon",
       "files": [
@@ -138,18 +166,37 @@
       ],
       "category": "neutral",
       "subtitle": "Baboon dies"
+    },
+    {
+      "name": "purpy_jam",
+      "files": [
+        "purpyjam"
+      ],
+      "category": "music",
+      "subtitle": ""
+    },
+    {
+      "name": "idlebaboon",
+      "files": [
+        "idlebaboon"
+      ],
+      "category": "neutral",
+      "subtitle": "Baboon idle"
     }
   ],
   "language_map": {
     "en_us": {
       "itemGroup.tabwip": "wip",
+      "item.wip.purpy_jam.desc": "Jammin",
       "item.wip.mystic_sword": "Mystic Sword",
       "item.wip.baboon_spawn_egg": "Baboon Spawn Egg",
       "item.wip.tornado": "Tornado",
       "subtitles.idlebaboon": "Baboon idle",
+      "item.wip.purpy_jam": "Purpy Jam",
       "item.wip.skull_totem": "Skull Totem",
       "entity.wip.baboon": "Baboon",
-      "subtitles.deadbaboon": "Baboon dies"
+      "subtitles.deadbaboon": "Baboon dies",
+      "subtitles.purpy_jam": ""
     }
   },
   "foldersRoot": {

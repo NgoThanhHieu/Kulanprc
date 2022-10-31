@@ -29,8 +29,8 @@ import java.util.ArrayList;
 public class WipModFeatures {
 	public static final DeferredRegister<Feature<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.FEATURES, WipMod.MODID);
 	private static final List<FeatureRegistration> FEATURE_REGISTRATIONS = new ArrayList<>();
-	public static final RegistryObject<Feature<?>> NETHER_TOWER = register("nether_tower", NetherTowerFeature::feature,
-			new FeatureRegistration(GenerationStep.Decoration.RAW_GENERATION, NetherTowerFeature.GENERATE_BIOMES, NetherTowerFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> NETHER_TOWER = register("nether_tower", NetherTowerFeature::feature, new FeatureRegistration(
+			GenerationStep.Decoration.UNDERGROUND_STRUCTURES, NetherTowerFeature.GENERATE_BIOMES, NetherTowerFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);
